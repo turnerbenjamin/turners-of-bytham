@@ -1,0 +1,10 @@
+$HOME
+.out
+
+# compressed files
+*.br
+*.gz
+
+
+
+

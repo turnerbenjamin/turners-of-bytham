@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script>
+      function closeMenu(e) {
+        if (e.target.closest(".menu")) return;
+        document.getElementById("menu-toggle").checked = false;
+      }
+    </script>
+    <title>Turners of Bytham | Little Bytham Organic Farming</title>
+  </head>
+
+  <body id="farm-page" onclick="closeMenu(event)">
+    <header>
+      <div class="title">
+        <img src="img/logo.png" alt="logo" />
+        <h1>Turners of Bytham</h1>
+      </div>
+      <div class="menu">
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <a href="/" class="active">The Farm</a>
+          <a href="/family">Our Family</a>
+          <a href="#">We Grow</a>
+          <a href="/partners">Partners</a>
+          <a href="#">Float</a>
+        </nav>
+      </div>
+    </header>
+    <div class="feat-img"></div>
+    <main>
+      <section>
+        <h2>Turners of Bytham</h2>
+        <p>
+          Every farm has a story to tell, as unique as the farm itself. For
+          some, it is an important part of knowing where their food comes from
+          and the wider values that they are supporting. For others, it is a
+          chance to get to know the farmland whose trails they have enjoyed
+          exploring. So, whatever your reason for searching us out, thank you
+          and this is just a really small snapshot of what we do and the people
+          who help to make it all happen.
+        </p>
+        <div class="quotation">
+          <blockquote>
+            “Telling a story is like reaching into a granary full of wheat and
+            drawing out a handful. There is always more to tell than can be
+            told.”
+          </blockquote>
+          <p class="citation">Wendell Berry</p>
+        </div>
+        <div class="section-separator">
+          <div class="rule"></div>
+          <img src="img/jumping-hare.svg" />
+          <div class="rule"></div>
+        </div>
+      </section>
+
+      <section id="grange-section" class="text-img-block border-style yellow">
+        <div class="text-img-block--img-wrapper">
+          <img src="img/grange-map.png" alt="map of The Grange" />
+        </div>
+        <div class="text-img-block--text-wrapper">
+          <div class="text-img-block--text">
+            <h3>The Grange</h3>
+            <p>
+              The Grange is a traditional, organic farm cared for by the Turners
+              for over four generations. Tucked away in the small village of
+              Little Bytham near Stamford, the farm is able to produce some very
+              special crops from its small (by today’s standards) 100ha.
+            </p>
+            <p>
+              It sits overlooking a broad valley formed by the once great Bytham
+              River, whose legacy is its unique range of soils. John and Guy
+              continue the same long tradition of truly mixed, rotational
+              farming that has a passion for our produce.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-img-block reversed green">
+        <div class="text-img-block--img-wrapper triangle-shadow right-aligned">
+          <img src="img/lb5k.jpg" alt="lb5k competitors running on the farm" />
+        </div>
+
+        <div class="text-img-block--text-wrapper">
+          <div class="text-img-block--text">
+            <h3>Open Farm Everyday</h3>
+            <p>
+              The farm has an extensive range of permissive footpaths, which
+              offer circular walks ranging from a short stroll to a full blown
+              hike. It’s a privilege to live on such a lovely farm and its one
+              that we like to share as widely as possible.
+            </p>
+            <p>
+              To protect the wildlife and farm animals, please stick to the
+              paths and keep dogs under close supervision.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-img-block blue">
+        <div class="text-img-block--img-wrapper triangle-shadow">
+          <img src="img/jackie-and-pete.png" alt="Jackie and Pete Murray" />
+        </div>
+
+        <div class="text-img-block--text-wrapper">
+          <div class="text-img-block--text">
+            <h3>Wildlife</h3>
+            <p>
+              We are fortunate to have such a wide range of habitats to support
+              wildlife on the farm. Streams, ponds, a former clay pit, a disused
+              railway line and old limestone workings are all managed in ways to
+              make the most of what they can offer for insects, birds and
+              mammals.
+            </p>
+            <p>
+              Our Organic system of farming means that the food networks
+              necessary to support wildlife are interwoven with the areas we use
+              for producing crops and growing grass. Within the cereal fields
+              that grow the wheats and oats, you will also find plants that
+              would be easy to dismiss as simply “weeds” but they are as
+              important for feeding the wildlife as the crops are for feeding
+              us.
+            </p>
+            <p>
+              Every aspect of what we do at The Grange is a partnership, and
+              managing our wildlife is no exception. We are extremely fortunate
+              to have our very own dedicated “Grange Rangers” in the form of
+              Pete and Jackie Murray who make a huge contribution to what we do;
+              from an annual spring clean of the nesting boxes to monitoring our
+              butterfly and day moth populations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-img-block banner-style offset yellow">
+        <div class="text-img-block--img-wrapper large-screen-only">
+          <img src="img/farm-group.webp" alt="group visiting The Grange farm" />
+        </div>
+        <div class="text-img-block--text-wrapper">
+          <div class="text-img-block--text">
+            <h3>Our History</h3>
+            <p>
+              There are reminders that farming has been practiced in Little
+              Bytham over many centuries. One of the suggested origins of the
+              village’s name “Bytham” comes from the Anglo-Saxon term
+              "cultivated village”. In medieval times, the land was sought by
+              the Earl of Albemarle, half-brother to William the Conqueror, “to
+              give him some land which would bear wheat, whereby he might be
+              better able to nourish his son”.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a
+        class="cta"
+        href="https://www.instagram.com/turnersofbytham/"
+        target="_blank"
+      >
+        <h3>Follow Us</h3>
+      </a>
+      <div class="footer-links">
+        <a href="mailto:office@turnersofbytham.co.uk"
+          >OFFICE@TURNERSOFBYTHAM.CO.UK</a
+        >
+      </div>
+      <div class="footer-attributions">
+        <p>© PM Images and Farming Photography</p>
+        <p>Design & Artwork by Trudy Turner Illustrations</p>
+      </div>
+      <img src="img/sitting-hare.svg" alt="sitting-hare" />
+    </footer>
+  </body>
+</html>
