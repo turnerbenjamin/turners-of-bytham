@@ -32,9 +32,11 @@
 
   --yellow-lt: #faf1df;
   --yellow: #f2ddaf;
+  --yellow-dk: #be9d67;
 
   --green-lt: #d0e3d0;
   --green: #8ab88a;
+  --green-dk: #293729;
 
   --blue-lt: #bae0f0;
   --blue: #69adcb;
@@ -169,6 +171,7 @@ h3 {
 
 p {
   max-width: 65ch;
+  text-align: justify;
 }
 
 /* Navigation */
@@ -347,6 +350,10 @@ nav a:hover {
   background-image: url("/img/drone-shot.webp");
 }
 
+#we-grow-page .feat-img {
+  background-image: url("/img/feat-we-grow.webp");
+}
+
 @media only screen and (min-width: 960px) {
   .feat-img {
     height: 400px;
@@ -405,16 +412,16 @@ nav a:hover {
 
 /** Text/Img Layout Blocks */
 
-.text-img-block.yellow {
+.yellow {
   --accent-color-lt: var(--yellow-lt);
   --accent-color: var(--yellow);
 }
-.text-img-block.green {
+.green {
   --accent-color-lt: var(--green-lt);
   --accent-color: var(--green);
 }
 
-.text-img-block.blue {
+.blue {
   --accent-color-lt: var(--blue-lt);
   --accent-color: var(--blue);
 }
@@ -507,7 +514,7 @@ nav a:hover {
     grid-row: 1/2;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-self: end;
     width: 100%;
   }
 
@@ -518,9 +525,19 @@ nav a:hover {
   .text-img-block--text-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-self: start;
     padding-left: var(--ws-6);
     padding-right: var(--ws-6);
+  }
+
+  .text-img-block.reversed {
+    & .text-img-block--text-wrapper {
+      justify-self: end;
+    }
+
+    & .text-img-block--img-wrapper {
+      justify-self: start;
+    }
   }
 
   .text-img-block--text {
@@ -578,23 +595,6 @@ nav a:hover {
   .triangle-shadow {
     position: relative;
     padding: 0 var(--ws-5) var(--ws-5) var(--ws-5);
-  }
-
-  .triangle-shadow.card {
-    padding: var(--ws-7) var(--ws-6);
-    font: var(--ft-sm);
-    font-family: open-sans, sans-serif;
-  }
-  .triangle-shadow.card::before {
-    display: block;
-    position: absolute;
-    content: "";
-    inset: 0 var(--ws-5) var(--ws-5) var(--ws-5);
-    background-color: #fff;
-    padding: var(--ws-5);
-    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: -1;
   }
 
   .triangle-shadow::after {

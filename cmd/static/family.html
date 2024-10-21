@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/family-tree.css" rel="stylesheet" />
     <script>
       function closeMenu(e) {
         if (e.target.closest(".menu")) return;
@@ -16,7 +17,7 @@
   <body id="our-family-page" onclick="closeMenu(event)">
     <header>
       <div class="title">
-        <img src="img/logo.png" alt="logo" />
+        <img src="img/logo.png" alt="logo" height="45px" width="45px" />
         <h1>Turners of Bytham</h1>
       </div>
       <div class="menu">
@@ -28,7 +29,7 @@
         <nav>
           <a href="/">The Farm</a>
           <a href="/family" class="active">Our Family</a>
-          <a href="#">We Grow</a>
+          <a href="/we-grow">We Grow</a>
           <a href="/partners">Partners</a>
           <a href="#">Float</a>
         </nav>
@@ -60,15 +61,14 @@
       </section>
     </main>
     <div class="family-tree">
-      <section class="text-img-block blue">
-        <div class="text-img-block--img-wrapper">
+      <div class="node">
+        <figure class="img-wrapper">
           <img src="img/prize-bull.webp" alt="John with a prize bull" />
-        </div>
+        </figure>
 
-        <div
-          class="text-img-block--text-wrapper card triangle-shadow right-aligned"
-        >
-          <div class="text-img-block--text">
+        <div class="text-wrapper">
+          <div class="card triangle-shadow right-aligned blue">
+            <h4>1895</h4>
             <h3>John & Caroline</h3>
             <p>
               John’s family farmed at Skellingthorpe, near Lincoln, but as one
@@ -87,15 +87,15 @@
             </p>
           </div>
         </div>
-      </section>
-
-      <section class="text-img-block reversed green">
-        <div class="text-img-block--img-wrapper">
+      </div>
+      <div class="node">
+        <figure class="img-wrapper">
           <img src="img/jack-and-margaret.webp" alt="John 'Jack' & Margaret" />
-        </div>
+        </figure>
 
-        <div class="text-img-block--text-wrapper card triangle-shadow">
-          <div class="text-img-block--text">
+        <div class="text-wrapper">
+          <div class="card triangle-shadow green">
+            <h4>1932</h4>
             <h3>John 'Jack' & Margaret</h3>
             <p>
               “Jack” began his professional career as a teacher before going on
@@ -120,17 +120,15 @@
             </p>
           </div>
         </div>
-      </section>
-
-      <section class="text-img-block yellow">
-        <div class="text-img-block--img-wrapper">
+      </div>
+      <div class="node">
+        <figure class="img-wrapper">
           <img src="img/anthony-and-judy.webp" alt="Anthony & Judy" />
-        </div>
+        </figure>
 
-        <div
-          class="text-img-block--text-wrapper card triangle-shadow right-aligned"
-        >
-          <div class="text-img-block--text">
+        <div class="text-wrapper">
+          <div class="card triangle-shadow yellow right-aligned">
+            <h4>1961</h4>
             <h3>Anthony & Judy</h3>
             <p>
               Following time spent in the RAF Regiment 'Rock Apes' as his
@@ -150,15 +148,15 @@
             </p>
           </div>
         </div>
-      </section>
-
-      <section class="text-img-block reversed blue">
-        <div class="text-img-block--img-wrapper">
+      </div>
+      <div class="node">
+        <figure class="img-wrapper">
           <img src="img/john-and-guy.webp" alt="John & Guy" />
-        </div>
+        </figure>
 
-        <div class="text-img-block--text-wrapper triangle-shadow card">
-          <div class="text-img-block--text">
+        <div class="text-wrapper">
+          <div class="card triangle-shadow blue">
+            <h4>1995</h4>
             <h3>John & Guy</h3>
             <p>
               Brothers John and Guy have helped to steer the farm’s fortunes
@@ -176,7 +174,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
     <footer>
       <a

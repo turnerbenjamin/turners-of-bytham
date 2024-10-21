@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/we-grow.css" rel="stylesheet" />
+    <script>
+      function closeMenu(e) {
+        if (e.target.closest(".menu")) return;
+        document.getElementById("menu-toggle").checked = false;
+      }
+    </script>
+    <script src="js/we-grow.js" defer></script>
+    <title>Turners of Bytham | We Grow</title>
+  </head>
+
+  <body id="we-grow-page" onclick="closeMenu(event)">
+    <header>
+      <div class="title">
+        <img src="img/logo.png" alt="logo" height="45px" width="45px" />
+        <h1>Turners of Bytham</h1>
+      </div>
+      <div class="menu">
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <a href="/">The Farm</a>
+          <a href="/family">Our Family</a>
+          <a href="/we-grow" class="active">We Grow</a>
+          <a href="/partners">Partners</a>
+          <a href="#">Float</a>
+        </nav>
+      </div>
+    </header>
+    <div class="feat-img"></div>
+    <main>
+      <section>
+        <h2>We Grow</h2>
+        <p>
+          The farm produces a diverse range of crops, most of which are destined
+          for a local mill or bakery. We also occasionally still produce a few
+          crops for malting and these go into more specialised bulk markets.
+          Between the cereal crops, a lot of the farm’s fields grow grass to
+          rest them and help replenish the fertility. Other areas of the farm
+          are managed purely to get the best environment for wildlife, where we
+          have a particular focus on bumblebees, butterflies, day moths, and of
+          course our Hares are such an iconic feature of the farm. These are
+          just some of the crops we grow and a little bit about what makes each
+          one special.
+        </p>
+        <div class="section-separator">
+          <div class="rule"></div>
+          <img src="img/jumping-hare.svg" />
+          <div class="rule"></div>
+        </div>
+      </section>
+      <section>
+        <div id="crop-rotation">
+          <h3>Our Crops</h3>
+          <p>
+            The crops we grow reflect the organic system practiced on the farm
+            and all of the land that can be either ploughed or otherwise
+            cultivated forms part of a seven-year rotation:
+          </p>
+          <figure>
+            <ul>
+              <li>
+                <img
+                  src="/img/wheat-icon.svg"
+                  alt="wheat"
+                  height="60px"
+                  width="60px"
+                />
+                <p>Year 1</p>
+                <p>Wheat</p>
+              </li>
+              <li>
+                <img
+                  src="/img/oats-icon.svg"
+                  alt="oats"
+                  height="60px"
+                  width="60px"
+                />
+                <p>Year 2</p>
+                <p>Oats</p>
+              </li>
+              <li>
+                <img
+                  src="/img/peas-icon.svg"
+                  alt="peas"
+                  height="60px"
+                  width="60px"
+                />
+                <p>Year 3</p>
+                <p>Barley or Peas</p>
+              </li>
+              <li>
+                <img
+                  src="/img/grass-icon.svg"
+                  alt="grass"
+                  height="60px"
+                  width="60px"
+                />
+                <p>Year 4</p>
+                <p>Grass & Herbs</p>
+              </li>
+            </ul>
+          </figure>
+        </div>
+        <figure id="land-use">
+          <ul>
+            <li>
+              <img
+                src="/img/environmental-icon.svg"
+                alt="leaf icon"
+                height="60px"
+                width="60px"
+              />
+              <div class="land-use-item">
+                <div class="lui-label">Environmental</div>
+                <div class="lui-bar environmental">
+                  <div class="pattern"><p>12 ha.</p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img
+                src="/img/oats-icon.svg"
+                alt="oats icon"
+                height="60px"
+                width="60px"
+              />
+              <div class="land-use-item">
+                <div class="lui-label">Oats</div>
+                <div class="lui-bar oats">
+                  <div class="pattern"><p>12.5 ha.</p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img
+                src="/img/wheat-icon.svg"
+                alt="wheat icon"
+                height="60px"
+                width="60px"
+              />
+              <div class="land-use-item">
+                <div class="lui-label">Wheat</div>
+                <div class="lui-bar wheat">
+                  <div class="pattern"><p>22 ha.</p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img
+                src="/img/grass-icon.svg"
+                alt="grass icon"
+                height="60px"
+                width="60px"
+              />
+              <div class="land-use-item">
+                <div class="lui-label">Pastoral</div>
+                <div class="lui-bar pastoral">
+                  <div class="pattern"><p>58 ha.</p></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </figure>
+      </section>
+      <section class="crops">
+        <div class="crop wheat">
+          <img src="img/wheat-yq.webp" alt="YQ" />
+          <p class="crop--name">YQ</p>
+          <p class="crop--subtype">Population Wheat</p>
+          <p class="crop--desc">
+            One of the most diverse crops that we grow, YQ is diverse population
+            of up to 180 different crosses. Representing a lifetime’s work by
+            Professor Martin Wolfe, these populations will eventually evolve to
+            become as unique as the farm they are gown upon.
+          </p>
+        </div>
+        <div class="crop wheat">
+          <img src="img/wheat-ofp.webp" alt="Oak Farm Population" />
+          <p class="crop--name">Oak Farm Population</p>
+          <p class="crop--subtype">Population Wheat</p>
+          <p class="crop--desc">
+            Developed by Dr Ed Dickin, these population wheats lend their name
+            to his Lincolnshire family farm. They share YQ’s principle of
+            resilience and vigour through a diverse population of crosses. Ed
+            uses a combination of heritage and more developed wheats for these
+            populations.
+          </p>
+        </div>
+        <div class="crop wheat">
+          <img src="img/wheat-cornovii.webp" alt="Cornovii" />
+          <p class="crop--name">Cornovii</p>
+          <p class="crop--subtype">Heritage Mixture</p>
+          <p class="crop--desc">
+            Developed by Fred Price at Gothelney Farm, Cornovii is a simple but
+            diverse mix of seven heritage varieties: Hen Gymru, Holdfast, Old
+            Devon Blue Rough Chaff, Percivals Blue Cone, Red Lammas, Wilhelmina
+            and Yeoman. The Cornovii were a Celtic tribe - a fitting name for
+            this historic blend.
+          </p>
+        </div>
+        <div class="crop wheat">
+          <img src="img/wheat-oland.webp" width="200" alt="Öland" />
+          <p class="crop--name">Öland</p>
+          <p class="crop--subtype">Landrace Wheat</p>
+          <p class="crop--desc">
+            Ölands is an ancient grain and although lower yielding, it has a
+            high protein content and a terrific taste. The name comes from the
+            island off Sweden where it originated, and we are indebted to Oscar
+            Harding at Duchess Farm and E5 Bakehouse for introducing us to it.
+          </p>
+        </div>
+        <div class="crop wheat">
+          <img src="img/wheat-edgar.webp" width="200" alt="Edgar" />
+          <p class="crop--name">Edgar</p>
+          <p class="crop--subtype">Single Wheat</p>
+          <p class="crop--desc">
+            Single variety wheats still have a place alongside the more
+            specialist wheats we grow. Edgar is renowned for its flavour and it
+            has proved to be particularly versatile, giving good results in
+            breads, pastries, biscuits and pasta.
+          </p>
+        </div>
+        <div class="crop oat">
+          <img src="img/oat-mascani.webp" width="200" alt="Mascani" />
+          <p class="crop--name">Mascani</p>
+          <p class="crop--subtype">Husked Oat</p>
+          <p class="crop--desc">
+            Mascani is one of the staple varieties that is used to produce
+            Porridge Oats, Muesli together with a wide range of other foods and
+            drinks. They are a versatile food but need to be processed to remove
+            the inedible husk before use.
+          </p>
+        </div>
+        <div class="crop oat">
+          <img src="img/oat-oliver.webp" width="200" alt="Oliver" />
+          <p class="crop--name">Oliver</p>
+          <p class="crop--subtype">Naked Oat</p>
+          <p class="crop--desc">
+            Unlike husked varieties, Naked Oats need no specialised processing
+            before they can be used. With an appearance similar to rice and an
+            incredible potential as a cooking ingredient, they are a crop we
+            believe has a huge untapped potential.
+          </p>
+        </div>
+        <div class="crop pea">
+          <img src="img/pea-kabuki.webp" width="200" alt="Kabuki" />
+          <p class="crop--name">Kabuki</p>
+          <p class="crop--subtype">Marrowfat Pea</p>
+          <p class="crop--desc">
+            We often grow these Marrowfat peas under our organic system as part
+            of Hodmedod’s fantastic efforts to develop British grown protein
+            crops. They are an exciting and versatile ingredient that deserve to
+            be recognised as being so much more than simply a “Mushy Pea”
+          </p>
+        </div>
+        <div class="crop barley">
+          <img src="img/barley-laureatte.webp" width="200" alt="Laureatte" />
+          <p class="crop--name">Laureatte</p>
+          <p class="crop--subtype">Malting Barley</p>
+          <p class="crop--desc">
+            Principally used for brewing and distilling, malted barleys can also
+            be used as a cooking ingredient. Barley grows well as a crop on our
+            limestone soils and sits alongside Oats as a good crop to follow
+            wheat in the rotation.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a
+        class="cta"
+        href="https://www.instagram.com/turnersofbytham/"
+        target="_blank"
+      >
+        <h3>Follow Us</h3>
+      </a>
+      <div class="footer-links">
+        <a href="mailto:office@turnersofbytham.co.uk"
+          >OFFICE@TURNERSOFBYTHAM.CO.UK</a
+        >
+      </div>
+      <div class="footer-attributions">
+        <p>© PM Images and Farming Photography</p>
+        <p>Design & Artwork by Trudy Turner Illustrations</p>
+      </div>
+      <img src="img/sitting-hare.svg" alt="sitting-hare" />
+    </footer>
+  </body>
+</html>
