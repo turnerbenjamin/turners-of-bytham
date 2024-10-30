@@ -1,0 +1,15 @@
+# flyctl launch added from .gitignore
+**/$HOME
+**/.out
+
+# compressed files
+**/*.br
+**/*.gz
+
+# built files
+**/cmd/dist/*
+
+
+
+
+fly.toml

@@ -139,7 +139,7 @@
     max-width: 500px;
     display: grid;
     cursor: default;
-    border-top: 10px solid var(--bgc);
+    border-top: 10px solid var(--bgr);
 
     & .crop--img-wrapper {
       width: 100%;

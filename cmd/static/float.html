@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/float.css" rel="stylesheet" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css"
+      rel="stylesheet"
+      defer
+    />
+
+    <script>
+      function closeMenu(e) {
+        if (e.target.closest(".menu")) return;
+        document.getElementById("menu-toggle").checked = false;
+      }
+    </script>
+    <script
+      src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"
+      defer
+    ></script>
+    <script src="js/float.js" defer></script>
+    <title>Turners of Bytham | Float</title>
+  </head>
+
+  <body id="float-page" onclick="closeMenu(event)">
+    <header>
+      <div class="title">
+        <img src="img/logo.png" alt="logo" height="45px" width="45px" />
+        <h1>Turners of Bytham</h1>
+      </div>
+      <div class="menu">
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <a href="/">The Farm</a>
+          <a href="/family">Our Family</a>
+          <a href="/we-grow">We Grow</a>
+          <a href="/partners">Partners</a>
+          <a href="/float" class="active">Float</a>
+        </nav>
+      </div>
+    </header>
+    <div class="feat-img"></div>
+    <main>
+      <section>
+        <h2>Bytham Float</h2>
+        <p>
+          Bytham Float is made on our family farm in Little Bytham. The farm has
+          been fully organic since 2001; the past 20 years in particular has
+          been focussed on supporting everything that’s good about local food
+          networks.
+        </p>
+        <p>
+          Float is the most recent addition to the range of things the farm
+          produces and it is also the most rewarding. As well as being a way of
+          sharing with people the values that the farm reflects and the special
+          crops that we grow, it also allows us to work with some of the
+          fantastic people running our local food businesses.
+        </p>
+        <div class="section-separator">
+          <div class="rule"></div>
+          <img src="img/jumping-hare.png" />
+          <div class="rule"></div>
+        </div>
+      </section>
+      <section id="production-section" class="text-img-block yellow">
+        <div class="text-img-block--img-wrapper">
+          <img
+            src="img/jack-all-good.webp"
+            alt="Jack holding a crate of float"
+          />
+        </div>
+        <div class="text-img-block--text-wrapper">
+          <div class="text-img-block--text">
+            <h3>Production</h3>
+            <p>
+              The Grange is a traditional, organic farm cared for by the Turners
+              for over four generations. Tucked away in the small village of
+              Little Bytham near Stamford, the farm is able to produce some very
+              special crops from its small (by today’s standards) 100ha.
+            </p>
+            <p>
+              It sits overlooking a broad valley formed by the once great Bytham
+              River, whose legacy is its unique range of soils. John and Guy
+              continue the same long tradition of truly mixed, rotational
+              farming that has a passion for our produce.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="find-float">
+        <h3>Find Float</h3>
+
+        <div class="map-wrapper">
+          <div id="map"></div>
+          <div id="supplier-view" class="hidden">
+            <button id="close-supplier-view-btn"></button>
+            <button
+              id="previous-supplier-btn"
+              class="navigation-btn left"
+            ></button>
+            <button
+              id="next-supplier-btn"
+              class="navigation-btn right"
+            ></button>
+
+            <a id="supplier-view--link" target="_blank"
+              ><h3 id="supplier-view--title"></h3
+            ></a>
+            <div class="supplier-view--img-wrapper">
+              <img id="supplier-view--img" />
+            </div>
+            <div class="supplier-view--info">
+              <div id="supplier-view--desc"></div>
+              <div id="supplier-view--addr"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="socials">
+        <h3>Socials</h3>
+      </section>
+    </main>
+    <footer>
+      <a
+        class="cta"
+        href="https://www.instagram.com/turnersofbytham/"
+        target="_blank"
+      >
+        <h3>Follow Us</h3>
+      </a>
+      <div class="footer-links">
+        <a href="mailto:office@turnersofbytham.co.uk"
+          >OFFICE@TURNERSOFBYTHAM.CO.UK</a
+        >
+      </div>
+      <div class="footer-attributions">
+        <p>© PM Images and Farming Photography</p>
+        <p>Design & Artwork by Trudy Turner Illustrations</p>
+      </div>
+      <img src="img/sitting-hare.svg" alt="sitting-hare" />
+    </footer>
+  </body>
+</html>

@@ -1,30 +1,36 @@
 package main
 
 import (
-	"fmt"
+	"embed"
 	"log"
 	"net/http"
 	"path/filepath"
 
-	staticAssets "github.com/turnerbenjamin/tob_go/cmd/static"
 	"github.com/vearutop/statigz"
 	"github.com/vearutop/statigz/brotli"
 )
 
-func main() {
-	staticAssets.CompressFiles()
+//go:embed dist/*
+var publicDir embed.FS
 
-	staticFileServer := statigz.FileServer(staticAssets.FileSystem, brotli.AddEncoding)
+func main() {
+	staticFileServer := statigz.FileServer(publicDir, brotli.AddEncoding)
 
 	h := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		p := r.URL.Path
-		ext := filepath.Ext(p)
-		if ext == "" && p != "/" {
+		// Add .html extension where omitted
+		ext := filepath.Ext(r.URL.Path)
+		if ext == "" && r.URL.Path != "/" {
 			r.URL.Path += ".html"
 		}
-		fmt.Println(ext)
+
+		// Add dist prefix
+		r.URL.Path = "dist" + r.URL.Path
+
+		// CORS
+		w.Header().Set("Access-Control-Allow-Origin", "https://*.instagram.com")
+
+		// Static file server
 		staticFileServer.ServeHTTP(w, r)
-		w.WriteHeader(200)
 	})
 
 	mux := http.NewServeMux()

@@ -354,6 +354,11 @@ nav a:hover {
   background-image: url("/img/feat-we-grow.webp");
 }
 
+#float-page .feat-img {
+  background-image: url("/img/feat-float.webp");
+  background-position: center;
+}
+
 @media only screen and (min-width: 960px) {
   .feat-img {
     height: 400px;
@@ -449,7 +454,7 @@ nav a:hover {
 .text-img-block--img-wrapper img {
   width: 100%;
   object-fit: cover;
-  grid-row: 2/3;
+  gid-row: 2/3;
   margin-top: var(--ws-4);
   max-height: 400px;
 }

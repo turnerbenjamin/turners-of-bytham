@@ -5,6 +5,9 @@ $HOME
 *.br
 *.gz
 
+# built files
+cmd/dist/*
+
 
 
 
