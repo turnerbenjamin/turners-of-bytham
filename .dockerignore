@@ -6,10 +6,5 @@
 **/*.br
 **/*.gz
 
-# built files
-**/cmd/dist/*
-
-
-
 
 fly.toml
